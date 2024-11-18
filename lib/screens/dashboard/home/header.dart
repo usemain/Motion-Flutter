@@ -29,7 +29,7 @@ class _HeaderPageState extends State<HeaderPage> {
                     Padding(
                         padding: EdgeInsets.only(bottom: 2),
                         child: Text(
-                          '欢迎回来!  Yu',
+                          'Hello!  easy',
                           style: TextStyle(
                             color: commonColorDefault,
                             fontFamily: 'alimama',
@@ -49,7 +49,16 @@ class _HeaderPageState extends State<HeaderPage> {
             ),
             GestureDetector(
               onTap: () => Get.toNamed('/Details'),
-              child: const Icon(Icons.add_circle_outline),
+              child: ClipOval(
+                child: SizedBox(
+                  width: 35,
+                  height: 35,
+                  child: Image.asset(
+                    'assets/images/head.jpg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
             ),
           ],
         ));

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:motion/screens/dashboard/home/week.dart';
 import 'package:get/get.dart';
 import 'header.dart';
 import 'progress.dart';
-import 'learningMonthChart.dart';
+import 'overview.dart';
+import 'week.dart';
 import 'cart.dart';
 
 class HomePage extends StatefulWidget {
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           const HeaderPage(),
           const ProgressPage(),
-          const LearningMonthChartPage(),
+          const OverViewPage(),
           WeekPage(active: active, onWeekChange: onWeekChange),
           SlidableAutoCloseBehavior(
             child: Column(

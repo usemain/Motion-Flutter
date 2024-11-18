@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class LearningMonthChartPage extends StatefulWidget {
-  const LearningMonthChartPage({super.key});
+class OverViewPage extends StatefulWidget {
+  const OverViewPage({super.key});
 
   @override
-  State<LearningMonthChartPage> createState() => _LearningMonthChartPageState();
+  State<OverViewPage> createState() => _OverViewPageState();
 }
 
-class _LearningMonthChartPageState extends State<LearningMonthChartPage> {
+class _OverViewPageState extends State<OverViewPage> {
   @override
   Widget build(BuildContext context) {
     const int days = 180;
