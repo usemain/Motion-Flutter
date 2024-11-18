@@ -4,17 +4,14 @@ class LearningMonthChartPage extends StatefulWidget {
   const LearningMonthChartPage({super.key});
 
   @override
-  State<LearningMonthChartPage> createState() =>
-      _LearningMonthChartPageState();
+  State<LearningMonthChartPage> createState() => _LearningMonthChartPageState();
 }
 
-class _LearningMonthChartPageState
-    extends State<LearningMonthChartPage> {
+class _LearningMonthChartPageState extends State<LearningMonthChartPage> {
   @override
   Widget build(BuildContext context) {
-    const int days = 180; // 需要展示的总天数
-    const double spacing = 4.0; // 方格间距
-    // 计算出每行能放多少个方格
+    const int days = 180;
+    const double spacing = 4.0;
     int gridSize = MediaQuery.of(context).size.width ~/ (14 + spacing);
 
     return Column(
